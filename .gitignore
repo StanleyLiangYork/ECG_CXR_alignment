@@ -1,0 +1,43 @@
+# Protected datasets and generated experiment artifacts
+data/
+artifacts/
+results/
+outputs/
+reports/
+generations/
+models/
+checkpoints/
+adapters/
+
+# Large arrays, indexes, and model files
+*.npy
+*.npz
+*.parquet
+*.jsonl
+*.csv.gz
+*.index
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Local configuration and credentials
+config/environment.sh
+.env
+.env.*
+!.env.example
+.huggingface/
+.cache/
+
+# Python and Jupyter
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.ipynb_checkpoints/
+
+# Editors and operating systems
+.DS_Store
+.vscode/
+.idea/
