@@ -1,0 +1,17 @@
+{
+  "analysis_id": "jbhi_five_models_v1",
+  "primary_direction": "ecg",
+  "secondary_direction": "cxr",
+  "analysis_status": "exploratory; outcomes have already been inspected",
+  "bootstrap_replicates": 1000,
+  "bootstrap_seed": 4408,
+  "review_seed": 4409,
+  "review_contrast": ["full_trimodal", "same_only"],
+  "model_runs": {
+    "qwen35_4b": "generation_v3",
+    "medgemma15_4b": "generation_v3",
+    "gpt_oss_20b": "generation_v3",
+    "ecg_instruct_llama32_11b": "generation_v3",
+    "pulse7b_ecg": "pulse_compact_v1"
+  }
+}

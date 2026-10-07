@@ -15,6 +15,22 @@ adapters/
 *.parquet
 *.jsonl
 *.csv.gz
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.hea
+*.dat
+*.dcm
+*.jpg
+*.jpeg
+*.png
+*.pdf
+*.docx
+*.pptx
+*.zip
+*.tar
+*.gz
 *.index
 *.safetensors
 *.bin
@@ -24,6 +40,15 @@ adapters/
 
 # Local configuration and credentials
 config/environment.sh
+config/experiment4.environment.sh
+config/experiment.environment.sh
+hf_token*.txt
+*token*.txt
+analysis/
+clinical_review/
+query_images/
+external/
+.venv*/
 .env
 .env.*
 !.env.example

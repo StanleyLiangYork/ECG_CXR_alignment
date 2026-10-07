@@ -1,0 +1,467 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/rajesh-lab/symile",
+  "source_commit": "d12e2c8b0a528cd536ccc5175f910f38f07bb6cb",
+  "source_path": "experiments/data_processing/symile_mimic/constants.py",
+  "source_sha256": "6e9b1d2361e8dcd19a520dfdcbee72d24e3e2566d692a78a7707bbf452f65547",
+  "ordering": "sorted(labs_means.keys()); keys are itemid_percentile",
+  "observed_mask": {
+    "zero": "not observed; percentile slot is imputed",
+    "one": "observed"
+  },
+  "value_semantics": "training-set empirical CDF in [0,1], not raw concentration or clinical reference range",
+  "source_imputation": "per-lab mean training percentile",
+  "experiment4_imputation": "prepared bridge arrays replace unobserved slots with 0.5; these slots must not be described as observations",
+  "columns": [
+    {
+      "percentile_index": 0,
+      "observed_mask_index": 50,
+      "itemid": "50802",
+      "percentile_key": "50802_percentile",
+      "source_name": "Base Excess",
+      "display_name": "Base Excess",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 1,
+      "observed_mask_index": 51,
+      "itemid": "50804",
+      "percentile_key": "50804_percentile",
+      "source_name": "Calculated Total CO2",
+      "display_name": "Calculated Total CO2",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 2,
+      "observed_mask_index": 52,
+      "itemid": "50813",
+      "percentile_key": "50813_percentile",
+      "source_name": "Lactate",
+      "display_name": "Lactate",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 3,
+      "observed_mask_index": 53,
+      "itemid": "50818",
+      "percentile_key": "50818_percentile",
+      "source_name": "pCO2",
+      "display_name": "pCO2",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 4,
+      "observed_mask_index": 54,
+      "itemid": "50820",
+      "percentile_key": "50820_percentile",
+      "source_name": "pH",
+      "display_name": "pH",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 5,
+      "observed_mask_index": 55,
+      "itemid": "50821",
+      "percentile_key": "50821_percentile",
+      "source_name": "pO2",
+      "display_name": "pO2",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 6,
+      "observed_mask_index": 56,
+      "itemid": "50861",
+      "percentile_key": "50861_percentile",
+      "source_name": "Alanine Aminotransferase (ALT)",
+      "display_name": "Alanine Aminotransferase (ALT)",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 7,
+      "observed_mask_index": 57,
+      "itemid": "50862",
+      "percentile_key": "50862_percentile",
+      "source_name": "Albumin",
+      "display_name": "Albumin",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 8,
+      "observed_mask_index": 58,
+      "itemid": "50863",
+      "percentile_key": "50863_percentile",
+      "source_name": "Alkaline Phosphatase",
+      "display_name": "Alkaline Phosphatase",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 9,
+      "observed_mask_index": 59,
+      "itemid": "50868",
+      "percentile_key": "50868_percentile",
+      "source_name": "Anion Gap",
+      "display_name": "Anion Gap",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 10,
+      "observed_mask_index": 60,
+      "itemid": "50878",
+      "percentile_key": "50878_percentile",
+      "source_name": "Asparate Aminotransferase (AST)",
+      "display_name": "Aspartate Aminotransferase (AST)",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 11,
+      "observed_mask_index": 61,
+      "itemid": "50882",
+      "percentile_key": "50882_percentile",
+      "source_name": "Bicarbonate",
+      "display_name": "Bicarbonate",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 12,
+      "observed_mask_index": 62,
+      "itemid": "50885",
+      "percentile_key": "50885_percentile",
+      "source_name": "Bilirubin, Total",
+      "display_name": "Bilirubin, Total",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 13,
+      "observed_mask_index": 63,
+      "itemid": "50893",
+      "percentile_key": "50893_percentile",
+      "source_name": "Calcium, Total",
+      "display_name": "Calcium, Total",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 14,
+      "observed_mask_index": 64,
+      "itemid": "50902",
+      "percentile_key": "50902_percentile",
+      "source_name": "Chloride",
+      "display_name": "Chloride",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 15,
+      "observed_mask_index": 65,
+      "itemid": "50910",
+      "percentile_key": "50910_percentile",
+      "source_name": "Creatine Kinase (CK)",
+      "display_name": "Creatine Kinase (CK)",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 16,
+      "observed_mask_index": 66,
+      "itemid": "50912",
+      "percentile_key": "50912_percentile",
+      "source_name": "Creatinine",
+      "display_name": "Creatinine",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 17,
+      "observed_mask_index": 67,
+      "itemid": "50931",
+      "percentile_key": "50931_percentile",
+      "source_name": "Glucose",
+      "display_name": "Glucose",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 18,
+      "observed_mask_index": 68,
+      "itemid": "50934",
+      "percentile_key": "50934_percentile",
+      "source_name": "H",
+      "display_name": "H",
+      "opaque_source_label": true
+    },
+    {
+      "percentile_index": 19,
+      "observed_mask_index": 69,
+      "itemid": "50947",
+      "percentile_key": "50947_percentile",
+      "source_name": "I",
+      "display_name": "I",
+      "opaque_source_label": true
+    },
+    {
+      "percentile_index": 20,
+      "observed_mask_index": 70,
+      "itemid": "50960",
+      "percentile_key": "50960_percentile",
+      "source_name": "Magnesium",
+      "display_name": "Magnesium",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 21,
+      "observed_mask_index": 71,
+      "itemid": "50970",
+      "percentile_key": "50970_percentile",
+      "source_name": "Phosphate",
+      "display_name": "Phosphate",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 22,
+      "observed_mask_index": 72,
+      "itemid": "50971",
+      "percentile_key": "50971_percentile",
+      "source_name": "Potassium",
+      "display_name": "Potassium",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 23,
+      "observed_mask_index": 73,
+      "itemid": "50983",
+      "percentile_key": "50983_percentile",
+      "source_name": "Sodium",
+      "display_name": "Sodium",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 24,
+      "observed_mask_index": 74,
+      "itemid": "51006",
+      "percentile_key": "51006_percentile",
+      "source_name": "Urea Nitrogen",
+      "display_name": "Urea Nitrogen",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 25,
+      "observed_mask_index": 75,
+      "itemid": "51133",
+      "percentile_key": "51133_percentile",
+      "source_name": "Absolute Lymphocyte Count",
+      "display_name": "Absolute Lymphocyte Count",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 26,
+      "observed_mask_index": 76,
+      "itemid": "51146",
+      "percentile_key": "51146_percentile",
+      "source_name": "Basophils",
+      "display_name": "Basophils",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 27,
+      "observed_mask_index": 77,
+      "itemid": "51200",
+      "percentile_key": "51200_percentile",
+      "source_name": "Eosinophils",
+      "display_name": "Eosinophils",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 28,
+      "observed_mask_index": 78,
+      "itemid": "51221",
+      "percentile_key": "51221_percentile",
+      "source_name": "Hematocrit",
+      "display_name": "Hematocrit",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 29,
+      "observed_mask_index": 79,
+      "itemid": "51222",
+      "percentile_key": "51222_percentile",
+      "source_name": "Hemoglobin",
+      "display_name": "Hemoglobin",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 30,
+      "observed_mask_index": 80,
+      "itemid": "51237",
+      "percentile_key": "51237_percentile",
+      "source_name": "INR(PT)",
+      "display_name": "INR (PT)",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 31,
+      "observed_mask_index": 81,
+      "itemid": "51244",
+      "percentile_key": "51244_percentile",
+      "source_name": "Lymphocytes",
+      "display_name": "Lymphocytes",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 32,
+      "observed_mask_index": 82,
+      "itemid": "51248",
+      "percentile_key": "51248_percentile",
+      "source_name": "MCH",
+      "display_name": "MCH",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 33,
+      "observed_mask_index": 83,
+      "itemid": "51249",
+      "percentile_key": "51249_percentile",
+      "source_name": "MCHC",
+      "display_name": "MCHC",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 34,
+      "observed_mask_index": 84,
+      "itemid": "51250",
+      "percentile_key": "51250_percentile",
+      "source_name": "MCV",
+      "display_name": "MCV",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 35,
+      "observed_mask_index": 85,
+      "itemid": "51254",
+      "percentile_key": "51254_percentile",
+      "source_name": "Monocytes",
+      "display_name": "Monocytes",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 36,
+      "observed_mask_index": 86,
+      "itemid": "51256",
+      "percentile_key": "51256_percentile",
+      "source_name": "Neutrophils",
+      "display_name": "Neutrophils",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 37,
+      "observed_mask_index": 87,
+      "itemid": "51265",
+      "percentile_key": "51265_percentile",
+      "source_name": "Platelet Count",
+      "display_name": "Platelet Count",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 38,
+      "observed_mask_index": 88,
+      "itemid": "51274",
+      "percentile_key": "51274_percentile",
+      "source_name": "PT",
+      "display_name": "PT",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 39,
+      "observed_mask_index": 89,
+      "itemid": "51275",
+      "percentile_key": "51275_percentile",
+      "source_name": "PTT",
+      "display_name": "PTT",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 40,
+      "observed_mask_index": 90,
+      "itemid": "51277",
+      "percentile_key": "51277_percentile",
+      "source_name": "RDW",
+      "display_name": "RDW",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 41,
+      "observed_mask_index": 91,
+      "itemid": "51279",
+      "percentile_key": "51279_percentile",
+      "source_name": "Red Blood Cells",
+      "display_name": "Red Blood Cells",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 42,
+      "observed_mask_index": 92,
+      "itemid": "51301",
+      "percentile_key": "51301_percentile",
+      "source_name": "White Blood Cells",
+      "display_name": "White Blood Cells",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 43,
+      "observed_mask_index": 93,
+      "itemid": "51678",
+      "percentile_key": "51678_percentile",
+      "source_name": "L",
+      "display_name": "L",
+      "opaque_source_label": true
+    },
+    {
+      "percentile_index": 44,
+      "observed_mask_index": 94,
+      "itemid": "52069",
+      "percentile_key": "52069_percentile",
+      "source_name": "Absolute Basophil Count",
+      "display_name": "Absolute Basophil Count",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 45,
+      "observed_mask_index": 95,
+      "itemid": "52073",
+      "percentile_key": "52073_percentile",
+      "source_name": "Absolute Eosinophil Count",
+      "display_name": "Absolute Eosinophil Count",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 46,
+      "observed_mask_index": 96,
+      "itemid": "52074",
+      "percentile_key": "52074_percentile",
+      "source_name": "Absolute Monocyte Count",
+      "display_name": "Absolute Monocyte Count",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 47,
+      "observed_mask_index": 97,
+      "itemid": "52075",
+      "percentile_key": "52075_percentile",
+      "source_name": "Absolute Neutrophil Count",
+      "display_name": "Absolute Neutrophil Count",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 48,
+      "observed_mask_index": 98,
+      "itemid": "52135",
+      "percentile_key": "52135_percentile",
+      "source_name": "Immature Granulocytes",
+      "display_name": "Immature Granulocytes",
+      "opaque_source_label": false
+    },
+    {
+      "percentile_index": 49,
+      "observed_mask_index": 99,
+      "itemid": "52172",
+      "percentile_key": "52172_percentile",
+      "source_name": "RDW-SD",
+      "display_name": "RDW-SD",
+      "opaque_source_label": false
+    }
+  ]
+}

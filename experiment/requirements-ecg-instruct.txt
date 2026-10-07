@@ -1,0 +1,14 @@
+# ECG-Instruct uses the merged Mllama checkpoint through standard Transformers.
+# It may be installed in the working Experiment 4 environment or a dedicated kernel.
+torch
+torchvision
+transformers>=4.46
+accelerate
+bitsandbytes
+ipykernel
+pillow
+numpy
+pandas
+matplotlib
+wfdb
+huggingface_hub

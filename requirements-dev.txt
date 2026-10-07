@@ -1,0 +1,9 @@
+# Offline synthetic tests and notebook-format validation, not model inference.
+pytest
+nbformat
+numpy
+pandas
+torch
+pillow
+matplotlib
+scikit-learn

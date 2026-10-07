@@ -1,0 +1,9 @@
+# Install AFTER the official PULSE/LLaVA stack, in its Python 3.10 environment only.
+# PULSE's older PyTorch stack requires the NumPy 1.x ABI.
+numpy<2
+pandas<3
+wfdb
+matplotlib
+pillow
+huggingface_hub<1
+ipykernel
