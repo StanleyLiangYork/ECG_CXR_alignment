@@ -47,7 +47,7 @@ def test_no_embedded_secrets_or_personal_home_paths():
 
 def test_all_notebooks_are_clean_valid_and_compile():
     paths = list(ROOT.glob('notebooks/*.ipynb')) + list(ROOT.glob('experiment/*.ipynb'))
-    assert len(list(ROOT.glob('experiment/*.ipynb'))) == 24
+    assert len(list(ROOT.glob('experiment/*.ipynb'))) == 29
     for path in paths:
         nb = nbformat.read(path, as_version=4)
         nbformat.validate(nb)
@@ -73,3 +73,18 @@ def test_five_model_analysis_bundle():
     for prefix in ('13E', '14', '15', '16'):
         [path] = list(directory.glob(prefix + '_*.ipynb'))
         assert 'e4_jbhi_analysis' in path.read_text(), path.name
+
+
+def test_extension_release_is_complete():
+    directory = ROOT / 'experiment'
+    for prefix in ('17', '18', '19', '20', '21'):
+        assert len(list(directory.glob(prefix + '_*.ipynb'))) == 1
+    for name in ('e4_review_controls.py', 'e4_pulse_prompt_v2.py',
+                 'e4_review_pulse_v2.py', 'test_review_controls.py',
+                 'test_pulse_prompt_v2.py'):
+        assert (directory / name).is_file()
+    assert (ROOT / 'docs/extension_workflow.md').is_file()
+    [pulse] = directory.glob('20_*.ipynb')
+    assert 'IMAGES_APPROVED = False' in pulse.read_text()
+    [evaluation] = directory.glob('21_*.ipynb')
+    assert 'pulse_prompt_v2' in evaluation.read_text()

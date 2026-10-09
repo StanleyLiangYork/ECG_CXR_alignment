@@ -1,15 +1,23 @@
-# Admission-Linked Multimodal Evidence Integration for ECG Report Generation
+# Admission-Linked Multimodal Evidence for ECG Report Generation: Retrieval, Agreement, and Attribution
 
 **Zhaohui Liang, Niccolo Marini, Sivaramakrishnan Rajaraman, Zhiyun Xue, Sameer Antani**
 
 National Library of Medicine, National Institutes of Health, Bethesda, Maryland, USA
+
+## Abstract
+
+We investigated whether admission-linked evidence from electrocardiograms (ECG), chest X-rays (CXR), and laboratory tests in previously observed cases improves ECG report generation while maintaining verifiable support. Continuous contrastive, vector-quantized, and hybrid bridges aligned frozen representations without using report text. Retrieved admissions supplied source-labeled context to frozen generators. Globally patient-disjoint evaluation included 250 ECG and 250 CXR examinations, five generators, controlled evidence ablations, and blinded review of 210 reports. Additional experiments compared ECG retrieval, broken admission linkage, nearest-report copying, and calibrated waveform rendering. We measured agreement with machine interpretations, omissions, reference-discordant findings, and attribution support. Admission retrieval exceeded random ranking, and laboratory values improved matching. For the evaluated general-purpose vision-language model, full evidence improved diagnostic agreement by approximately 0.19 over a low-recall no-retrieval baseline, but increased reference-discordant findings. Full evidence did not consistently outperform retrieved ECG evidence alone or simpler ECG retrieval. Preserved admission linkage reduced omission relative to broken linkage, whereas its agreement advantage remained uncertain under bootstrap sensitivity analysis. Nearest-report copying exceeded that model's generation on reference agreement. This endpoint therefore does not establish query-specific interpretation. For one ECG-specialized generator, the adverse retrieval effect seen with legacy images was not evident with calibrated images. Human review found no overall quality advantage, and only one of 180 applicable evidence traces was supported. Admission-linked retrieval enables model-dependent augmentation and controlled evaluation of multimodal integration. Benefits depend on retrieval, evidence presentation, and generator interface; selective use and query-specific verification remain essential before clinical deployment.
+
+## Code overview
 
 Research code for testing whether ECG, chest radiograph (CXR), and laboratory
 patterns from other patients' linked admissions can support report generation.
 The current workflow is **[Experiment 4](experiment/README.md)**: globally
 patient-disjoint partitioning, non-text trimodal bridge training, evidence
 retrieval, five direction-specific generators, automated evaluation, and blinded
-clinical review. Earlier two-modal notebooks remain for preprocessing and
+clinical review. Notebooks **17–21** add ECG-only retrieval, broken-linkage,
+nearest-report copying, and calibrated-rendering controls; see the
+[extension instructions](docs/extension_workflow.md). Earlier two-modal notebooks remain for preprocessing and
 historical comparisons.
 
 ## Scientific scope
@@ -21,7 +29,7 @@ Same-admission concurrence does **not** imply diagnostic equivalence between
 modalities. Retrieved cases are other patients' evidence, not facts about the
 query. Laboratory distributional percentiles are not abnormality thresholds.
 
-Experiments compare no retrieval, same-sensor evidence, cross-sensor and lab
+Experiments compare no retrieval, same-modality evidence, cross-sensor and lab
 additions, full trimodal evidence, and random/shuffled/gated controls. They do
 not presume vector quantization is superior. Agreement against machine
 interpretations and CXR labels does not establish clinical correctness.

@@ -23,3 +23,13 @@ export E4_GENERATION_RUN="generation_v3"
 # Notebook 13C uses pulse_compact_v1; see analysis_model_runs.json.
 export E4_ANALYSIS_ID="jbhi_five_models_v1"
 export E4_ALLOW_INCOMPLETE=0
+
+# Extension notebooks 17–21: keep this root distinct from the base experiment.
+export E4_REVIEW_ROOT="$EXPERIMENT4_ROOT/review_extension_v1"
+export E4_REVIEW_METHODS=clip
+export E4_REVIEW_QUERY_N=250
+export E4_REVIEW_RENDER_N=100
+export E4_REVIEW_MAX_ROWS=50
+export E4_REVIEW_IMAGES_APPROVED=0
+export E4_REVIEW_ALLOW_PARTIAL=0
+export E4_REVIEW_BOOTSTRAPS=1000

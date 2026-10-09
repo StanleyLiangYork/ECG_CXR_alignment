@@ -123,6 +123,17 @@ quarantines unverifiable identities. Do not suppress leakage checks.
 | 11 | 14 | Freeze stationary inputs and evaluate the five-model workflow |
 | 12 | 15 | Create blinded independent review forms and private linking key |
 | 13 | 16 | Summarize reviews; adjudicate disagreements and rerun to finalize |
+| 14 | 17 | Freeze extension cohort; compare raw ECG, bridge ECG-only, trimodal, broken-linkage and copying controls |
+| 15 | 18 | Prepare and visually inspect paired legacy/calibrated ECG images |
+| 16 | 19 | Qwen extension pilot, then complete unchanged run |
+| 17 | 20 | Revised PULSE prompt and rendering comparison in an isolated snapshot |
+| 18 | 21 | Evaluate revised PULSE and original Qwen extension runs together |
+
+**Before notebook 20:** its provenance-preserving preparation requires the original
+PULSE pilot protocol. Fresh installations must create that pilot first; follow
+[the extension instructions](../docs/extension_workflow.md) for the exact setup.
+Do not reuse old private output protocols after changing packaged source code:
+source hashes are intentionally checked on resume.
 
 04–06 can run in separate allocations after preparation. Models can run
 separately after 10, but never run concurrent writers for the same model/run.

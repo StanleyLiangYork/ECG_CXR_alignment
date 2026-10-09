@@ -1,10 +1,17 @@
 # Source-only Experiment 4 release
 
-Includes 24 current Experiment 4 notebooks, helper modules, four synthetic test
+Includes 29 current Experiment 4 notebooks, helper modules, six synthetic test
 modules, and the public lab-code mapping with its third-party license. Notebooks
 13E–16, their analysis module and configuration come from the newer
 `jbhi_analysis_update_20260930` source package. The original repository's MIT
 license and 21 two-modal notebooks are retained.
+
+The latest sync adds extension notebooks 17–21, retrieval/rendering controls,
+the conditional PULSE prompt helper, its isolated revision setup, and synthetic
+tests. The root README uses the updated manuscript title, authors and abstract.
+See `extension_workflow.md` for the original PULSE pilot dependency and separate
+revised-prompt evaluation paths. Experimental defaults and patient split seeds
+are retained; only machine-specific paths and saved notebook state are removed.
 
 Excluded: clinical CSVs/JSONLs, analysis/results directories, review responses,
 images, manuscripts, arrays, checkpoints, archives, caches, credentials and all
