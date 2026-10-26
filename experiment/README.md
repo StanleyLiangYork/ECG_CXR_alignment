@@ -1,4 +1,4 @@
-# Experiment 4: ECG–CXR–laboratory retrieval and report generation
+# Experiment: ECG–CXR–laboratory retrieval and report generation
 
 This is the current trimodal workflow. Run notebooks from this directory, or set
 `EXPERIMENT4_CODE_ROOT` to its absolute path. The older root `notebooks/14`–`20`
