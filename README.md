@@ -12,7 +12,7 @@ We investigated whether admission-linked evidence from electrocardiograms (ECG),
 
 Research code for testing whether ECG, chest radiograph (CXR), and laboratory
 patterns from other patients' linked admissions can support report generation.
-The current workflow is **[Experiment 4](experiment/README.md)**: globally
+The current workflow is **[Experiment](experiment/README.md)**: globally
 patient-disjoint partitioning, non-text trimodal bridge training, evidence
 retrieval, five direction-specific generators, automated evaluation, and blinded
 clinical review. Notebooks **17–21** add ECG-only retrieval, broken-linkage,
